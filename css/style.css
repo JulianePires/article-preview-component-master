@@ -23,6 +23,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 5vh;
+    font-size: 13px;
 }
 
 .card{
@@ -73,7 +74,7 @@ body{
 
 .card .cardContent .cardBottom #date{
     font-weight: 500;
-    font-size: 1rem;
+    
 }
 
 .card .cardContent .cardBottom #avatar{

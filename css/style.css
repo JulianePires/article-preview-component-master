@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%)
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%)
+    --GrayishBlue: hsl(212, 23%, 69%)
+    --LightGrayishBlue: hsl(210, 46%, 95%)
+}
+
+body{
+    background-color:hsl(210, 46%, 95%);
+    max-width: 375px;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 85vw;
+    background: white;
+    border-radius: 5%;
+}
+
+.cardImg{
+    height: 32vh;
+    background-image: url("../images/drawers.jpg");
+    background-size: cover;
+    border-radius: 5% 5% 0 0;
+}
+
+.cardTitle {
+    padding: 5vh 4vh 3vh 4vh;
+    text-align: justify;
+    font-weight: 700;
+}
+
+.cardText{
+    padding: 0vh 4vh 5vh 4vh;
+}
+
+
+@media (min-width: 375px) {
+    body{
+        max-width: 1440px;
+    }
+}

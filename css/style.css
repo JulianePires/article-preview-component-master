@@ -22,6 +22,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 5vh;
 }
 
 .card{
@@ -30,23 +31,76 @@ body{
     border-radius: 5%;
 }
 
-.cardImg{
+.card .cardImg{
     height: 32vh;
     background-image: url("../images/drawers.jpg");
     background-size: cover;
     border-radius: 5% 5% 0 0;
 }
 
-.cardTitle {
-    padding: 5vh 4vh 3vh 4vh;
+.card .cardContent{
+    padding: 5vh 4vh 4vh 4vh;
+}
+
+.card .cardContent .cardTitle {
+    padding-bottom: 3vh;
     text-align: justify;
     font-weight: 700;
 }
 
-.cardText{
-    padding: 0vh 4vh 5vh 4vh;
+.card .cardContent .cardText{
+    padding-bottom: 3vh;
 }
 
+.card .cardContent .cardBottom{
+    background: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.card .cardContent .cardBottom #bottomText{
+    width: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card .cardContent .cardBottom #name{
+    font-weight: 700;
+}
+
+.card .cardContent .cardBottom #date{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.card .cardContent .cardBottom #avatar{
+    width: 15vw;
+    border-radius: 50%;
+}
+
+.card .cardContent .cardBottom #share{
+    display: none;
+}
+
+.card .cardContent .cardBottom #shareIcon{
+    width: 8vw;
+    height: 100%;
+    float: right;
+    fill: #6e8098;
+    background-color: #e6edf7;
+    padding: 0.5rem;
+    border-radius: 100%;
+    z-index: 1;
+    align-self: center;
+}
+
+.card .cardContent .cardBottom #shareIcon:hover{
+    fill: #6e8098;
+    background-color:hsl(217, 19%, 35%);
+}
 
 @media (min-width: 375px) {
     body{
